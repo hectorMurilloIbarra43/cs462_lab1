@@ -26,8 +26,7 @@ A first ruleset for the Quickstart
       //text = event:attr("text").defaultsTo("Monkey").klog()
       text = (event:attr("text")) => "Hello " + event:attr("text") | "Hello Monkey"
     }
-    //if text then  
-    //  send_directive("Hello "+ text)
+    //send_directive("Hello "+ text)
     send_directive(text)
     
   }
